@@ -1,0 +1,16 @@
+ToDo: 
+
+-- button press to start & intro screen
+-- find profile pic and profile URL
+	-- print the profile picture
+-- save the img
+-- exclude blocked members messages
+-- edit the CSS 
+-- loading indicator when the messages gets dropped
+-- error message for if no conversations found
+-- error message if not message.htm file
+
+
+Abhishek
+- use Javascript SDK to access profile pics from client side 
+- jquery parse using "thread" class

@@ -1,0 +1,14 @@
+//get comments,id of messages from 11/17/16 to 11/17/14
+
+curl -i -X GET \
+ "https://graph.facebook.com/v2.2/10203285776325345/inbox?fields=comments%2Cupdated_time&limit=100000&__paging_token=enc_AdC2tZBdYaxZBaYbMW6Gf4oIxkpSQWalqnM2m2NF7rsGN3rWj04UN4nOE9Ma8qsNtZAOZBIZD&since=1416257894&until=1479417937&access_token=EAACEdEose0cBAAKWpnCBAdq9iqRPlVeEwcZA2RmTL4YDm1H6XbsZB8ZB3i9dmhmPSPZBehJQCNWb7GEZCDycXmwSQlAGnCunuqBKyAAeR5tFGnZCIxEkb9ovidWSNYFugVg3E0KyKjHVPUZBnXqb6GlLI4rwVGIT7nzuwthiWw9ZCgZDZD"
+
+
+FB.api(
+  '/10203285776325345/inbox',
+  'GET',
+  {"fields":"comments,updated_time","limit":"50000","__paging_token":"enc_AdC2tZBdYaxZBaYbMW6Gf4oIxkpSQWalqnM2m2NF7rsGN3rWj04UN4nOE9Ma8qsNtZAOZBIZD","since":"1416257894","until":"1479417937","access_token":"EAACEdEose0cBAAKWpnCBAdq9iqRPlVeEwcZA2RmTL4YDm1H6XbsZB8ZB3i9dmhmPSPZBehJQCNWb7GEZCDycXmwSQlAGnCunuqBKyAAeR5tFGnZCIxEkb9ovidWSNYFugVg3E0KyKjHVPUZBnXqb6GlLI4rwVGIT7nzuwthiWw9ZCgZDZD"},
+  function(response) {
+      // Insert your code here
+  }
+);
